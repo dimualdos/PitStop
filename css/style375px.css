@@ -1,0 +1,12 @@
+@media (min-width : 0px) and (max-width : 400px){
+	H1 {
+		font-size: 1.8em;
+	}
+	.lead {
+		font-size: 1.2em;
+	}
+	.opisanie {
+		font-size: 0.7em;
+	}
+	
+	
