@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: http://pitstop-online.ru/sitemap.xml
+Host: http://pitstop-online.ru
+
