@@ -1,8 +1,8 @@
 <?php
 // Файлы phpmailer
-require 'PHPMailer.php';
-require 'SMTP.php';
-require 'Exception.php';
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
@@ -30,7 +30,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'info@pitstop-online.ru'; // Логин на почте
-    $mail->Password   = 'yqrpmtlesvlqayds'; // Пароль на почте
+    $mail->Password   = 'ujvuuccbnmrmkjfr'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('info@pitstop-online.ru', 'Сайт Pit-Stop'); 
@@ -66,9 +66,7 @@ else {$result = "error";}
 } catch (Exception $e) {
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
-   
 }
 
 // Отображение результата
 echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
-    ?>
