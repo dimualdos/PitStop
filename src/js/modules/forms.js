@@ -19,13 +19,12 @@ const formSelector = (formSelector) => {
     };
 
     forms.forEach(item => {
-        const fields = item.querySelectorAll('[data-validate]');
+        // const fields = item.querySelectorAll('[data-validate]');
         send(item);
 
     });
 
     const postData = async (url, data) => {
-        console.log(data);
         let res = await fetch(url, {
             method: "POST",
             // headers: {
